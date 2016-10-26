@@ -26,6 +26,17 @@ Email:451413025@qq.com
 Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]<br>
 Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec<br>
 
+<<<<<<< HEAD
 2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows<br>
 python im2rec_*****.py prefix root<br>
 e.g. python im2rec_Windows.py E:\lfw\image E:\lfw<br>
+=======
+By Myself
+-------
+*Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release
+Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]
+Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec
+*Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows
+python im2rec_*****.py prefix root
+e.g. python im2rec_Windows.py E:\lfw\image E:\lfw
+>>>>>>> origin/master
