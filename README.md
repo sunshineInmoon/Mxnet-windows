@@ -17,26 +17,29 @@ deep learning system, and interesting insights of DL systems for hackers.
 说明
 -------
 这是我自己移植编译的Windows版本，只是为了自我学习和与大家交流。如果有什么问题欢迎告知。<br>
-CSDN:http://blog.csdn.net/sunshine_in_moon
-Email:451413025@qq.com
+* CSDN:http://blog.csdn.net/sunshine_in_moon<br>
+* 我写的Mxnet系列教程，还在更新中......<br>
+* Email:451413025@qq.com
+
+补充材料
+-------
+github使用的还不是很熟悉，我发现Windows文件夹下的一些东西并没有上传上去，在这里做个补充：<br>
+* 3rdparty:http://pan.baidu.com/s/1eSOFiaI  下载后解压，然后直接替`换掉`windows中3rdparty即可。<br>
+* x64:     http://pan.baidu.com/s/1jIhn88I   编译成功的tools里的工具，下载后直接`替换`掉windows中x64<br>
+* Release  http://pan.baidu.com/s/1kUXcmKR   编译成功的动态库，下载解压后直接`替换`掉windows中Release<br>
+下面的这三个文件我觉得是CMake的附带产物,可能并不一定需要<br>
+* CMakeFiles	http://pan.baidu.com/s/1bFdDIA<br>
+* dmlc-core		http://pan.baidu.com/s/1c2iLM3Q<br>
+* mxnet.dir		http://pan.baidu.com/s/1nvyIzVz<br>
+以上三个文件下载解压后`直接放到windows中`即可。
+
 
 我做的工作
 -------
 1、Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release<br>
-Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]<br>
-Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec<br>
-
-<<<<<<< HEAD
+>>>Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]<br>
+>>>Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec<br>
+<br>
 2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows<br>
-python im2rec_*****.py prefix root<br>
-e.g. python im2rec_Windows.py E:\lfw\image E:\lfw<br>
-=======
-By Myself
--------
-*Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release
-Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]
-Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec
-*Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows
-python im2rec_*****.py prefix root
-e.g. python im2rec_Windows.py E:\lfw\image E:\lfw
->>>>>>> origin/master
+>>>python im2rec_*****.py prefix root<br>
+>>>e.g. python im2rec_Windows.py E:\lfw\image E:\lfw<br>
