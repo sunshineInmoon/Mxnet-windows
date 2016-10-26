@@ -36,11 +36,11 @@ github使用的还不是很熟悉，我发现Windows文件夹下的一些东西�
 
 我做的工作
 -------
-1、Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release<br>
->>>Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]<br>
->>>Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec<br>
+`1、Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release`<br>
+Usage:<image.lst> <image_root_dir> <output.rec> [additional parameters]<br>
+`e.g.`	Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec<br>
 <br>
-2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows<br>
->>>python im2rec_*****.py prefix root<br>
->>>e.g. python im2rec_Windows.py E:\lfw\image E:\lfw<br>
+`2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows`<br>
+python im2rec_*****.py prefix root<br>
+`e.g.` 	python im2rec_Windows.py E:\lfw\image E:\lfw<br>
 
