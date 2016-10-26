@@ -73,3 +73,12 @@ In Neural Information Processing Systems, Workshop on Machine Learning Systems, 
 History
 -------
 MXNet is initiated and designed in collaboration by the authors of [cxxnet](https://github.com/dmlc/cxxnet), [minerva](https://github.com/dmlc/minerva) and [purine2](https://github.com/purine/purine2). The project reflects what we have learnt from the past projects. It combines important flavours of the existing projects for efficiency, flexibility and memory efficiency.
+
+By Myself
+-------
+1、Compile im2rec.cpp to Tools.exe in Mxnet-windows\windows\x64\Release 
+Usage: <prefix.lst> <image_root_dir> <image.rec> [additional parameters] 
+e.g. Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec 
+2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows 
+python im2rec_*****.py prefix root 
+e.g. python im2rec_Windows.py E:\lfw\image E:\lfw
