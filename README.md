@@ -94,7 +94,3 @@ Tools.exe E:\lfw\image_train.lst E:\lfw\ image.rec
 2、Modify tools\im2rec.py to im2rec_Linux.py for Linux and im2rec_Windows.py for Windows
 python im2rec_*****.py prefix root
 e.g. python im2rec_Windows.py E:\lfw\image E:\lfw
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
