@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\Mxnet\mxnet\src\common\mxrtc.cc">
+      <Filter>Source\common</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\c_api\c_api.cc">
+      <Filter>Source\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\c_api\c_api_error.cc">
+      <Filter>Source\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\c_api\c_predict_api.cc">
+      <Filter>Source\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\engine\engine.cc">
+      <Filter>Source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\engine\naive_engine.cc">
+      <Filter>Source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\engine\threaded_engine.cc">
+      <Filter>Source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\engine\threaded_engine_perdevice.cc">
+      <Filter>Source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\engine\threaded_engine_pooled.cc">
+      <Filter>Source\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\io\image_aug_default.cc">
+      <Filter>Source\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\io\io.cc">
+      <Filter>Source\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\io\iter_csv.cc">
+      <Filter>Source\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\io\iter_image_recordio.cc">
+      <Filter>Source\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\io\iter_mnist.cc">
+      <Filter>Source\io</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\kvstore\kvstore.cc">
+      <Filter>Source\kvstore</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\ndarray\ndarray.cc">
+      <Filter>Source\ndarray</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\ndarray\ndarray_function.cc">
+      <Filter>Source\ndarray</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\activation.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\batch_norm.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\block_grad.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\broadcast_mask_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\broadcast_reduce_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\cast.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\concat.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\convolution.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\correlation.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\crop.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\cross_device_copy.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\cudnn_batch_norm.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\cudnn_convolution.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\custom.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\deconvolution.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\dropout.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_broadcast_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_scalar_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\elementwise_sum.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\elementwise_unary_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\embedding.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\fully_connected.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\identity_attach_KL_sparse_reg.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\l2_normalization.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\leaky_relu.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\loss_binary_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\lrn.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\make_loss.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\matrix_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_cppwrapper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_memory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\native_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\ndarray_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\operator.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\operator_util.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\pooling.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\regression_output.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\reshape.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\rnn.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\roi_pooling.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\sample_op.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\sequence_last.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\sequence_mask.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\sequence_reverse.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\slice_channel.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\smooth_l1_unary.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\softmax_activation.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\softmax_output.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\spatial_transformer.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\svm_output.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\swapaxis.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\operator\upsampling.cc">
+      <Filter>Source\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\optimizer\optimizer.cc">
+      <Filter>Source\optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\optimizer\sgd.cc">
+      <Filter>Source\optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\resource.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\storage\storage.cc">
+      <Filter>Source\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\symbol\graph_executor.cc">
+      <Filter>Source\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\symbol\graph_memory_allocator.cc">
+      <Filter>Source\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\symbol\static_graph.cc">
+      <Filter>Source\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Mxnet\mxnet\src\symbol\symbol.cc">
+      <Filter>Source\symbol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Mxnet\mxnet\src\common\cuda_utils.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\common\lazy_alloc_array.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\common\object_pool.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\common\thread_local.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\common\utils.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\c_api\c_api_error.h">
+      <Filter>Include\c_api</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\engine\engine_impl.h">
+      <Filter>Include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\engine\stream_manager.h">
+      <Filter>Include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\engine\threaded_engine.h">
+      <Filter>Include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\engine\thread_pool.h">
+      <Filter>Include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\image_augmenter.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\image_recordio.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\inst_vector.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\iter_batchloader.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\iter_normalize.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\io\iter_prefetcher.h">
+      <Filter>Include\io</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\kvstore\comm.h">
+      <Filter>Include\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\kvstore\kvstore_dist.h">
+      <Filter>Include\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\kvstore\kvstore_dist_server.h">
+      <Filter>Include\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\kvstore\kvstore_local.h">
+      <Filter>Include\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\ndarray\ndarray_function-inl.h">
+      <Filter>Include\ndarray</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\ndarray\ndarray_function.h">
+      <Filter>Include\ndarray</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\activation-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\batch_norm-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\block_grad-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\broadcast_mask_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\broadcast_reduce_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\broadcast_reduce_op_common.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cast-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\channel_op_common.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\concat-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\convolution-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\correlation-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\crop-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_activation-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_batch_norm-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_convolution-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_deconvolution-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_lrn-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_pooling-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_rnn-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_softmax_activation-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\cudnn_spatial_transformer-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\custom-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\deconvolution-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\dropout-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_broadcast_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_scalar_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\elementwise_sum-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\elementwise_unary_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\embedding-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\fully_connected-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\identity_attach_KL_sparse_reg-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\l2_normalization-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\leaky_relu-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\loss_binary_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\lrn-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\make_loss-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\matrix_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_batch_norm-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_concat-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_convolution-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_cppwrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_elementwise-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_fully_connected-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_lrn-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_memory-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_pooling-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mkl\mkl_relu-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\mshadow_op.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\native_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\ndarray_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\operator_common.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\pooling-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\regression_output-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\reshape-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\rnn-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\roi_pooling-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\sample_op-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\sequence_last-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\sequence_mask-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\sequence_op_common.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\sequence_reverse-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\slice_channel-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\smooth_l1_unary-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\softmax_activation-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\softmax_output-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\spatial_transformer-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\svm_output-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\swapaxis-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\operator\upsampling-inl.h">
+      <Filter>Include\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\optimizer\sgd-inl.h">
+      <Filter>Include\optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\cpu_device_storage.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\gpu_device_storage.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\naive_storage_manager.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\pinned_memory_storage.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\pooled_storage_manager.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\storage\storage_manager.h">
+      <Filter>Include\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\symbol\graph_algorithm.h">
+      <Filter>Include\symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\symbol\graph_executor.h">
+      <Filter>Include\symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\symbol\graph_memory_allocator.h">
+      <Filter>Include\symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Mxnet\mxnet\src\symbol\static_graph.h">
+      <Filter>Include\symbol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\ndarray\ndarray_function.cu">
+      <Filter>Cuda\ndarray</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\activation.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\batch_norm.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\block_grad.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\broadcast_mask_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\broadcast_reduce_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\cast.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\concat.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\convolution.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\correlation.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\crop.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\cudnn_batch_norm.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\deconvolution.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\dropout.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_broadcast_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\elementwise_binary_scalar_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\elementwise_sum.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\elementwise_unary_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\embedding.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\fully_connected.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\identity_attach_KL_sparse_reg.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\l2_normalization.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\leaky_relu.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\loss_binary_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\lrn.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\make_loss.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\matrix_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\native_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\pooling.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\regression_output.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\reshape.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\rnn.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\roi_pooling.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\sample_op.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\sequence_last.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\sequence_mask.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\sequence_reverse.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\slice_channel.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\smooth_l1_unary.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\softmax_activation.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\softmax_output.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\spatial_transformer.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\svm_output.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\swapaxis.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\operator\upsampling.cu">
+      <Filter>Cuda\operator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\src\optimizer\sgd.cu">
+      <Filter>Cuda\optimizer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Mxnet\mxnet\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\ndarray\$(Configuration)\cuda_compile_generated_ndarray_function.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_activation.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_batch_norm.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_block_grad.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_broadcast_mask_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_broadcast_reduce_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_cast.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_concat.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_convolution.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_correlation.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_crop.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_cudnn_batch_norm.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_deconvolution.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_dropout.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_elementwise_binary_broadcast_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_elementwise_binary_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_elementwise_binary_scalar_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_elementwise_sum.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_elementwise_unary_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_embedding.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_fully_connected.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_identity_attach_KL_sparse_reg.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_l2_normalization.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_leaky_relu.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_loss_binary_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_lrn.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_make_loss.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_matrix_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_native_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_pooling.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_regression_output.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_reshape.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_rnn.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_roi_pooling.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_sample_op.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_sequence_last.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_sequence_mask.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_sequence_reverse.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_slice_channel.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_smooth_l1_unary.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_softmax_activation.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_softmax_output.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_spatial_transformer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_svm_output.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_swapaxis.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\operator\$(Configuration)\cuda_compile_generated_upsampling.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="E:\Mxnet\mxnet\windows\CMakeFiles\cuda_compile.dir\src\optimizer\$(Configuration)\cuda_compile_generated_sgd.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Cuda\ndarray">
+      <UniqueIdentifier>{96823E14-0818-4810-B743-3461C44BC46F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda\operator">
+      <UniqueIdentifier>{FD1C44E9-08CD-44E9-94F2-78726AE08A7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda\optimizer">
+      <UniqueIdentifier>{3BF5C9DD-F8F0-452F-9434-EA47204B62AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{80BD71E8-0400-4913-9397-0D9A55E907EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{185C2944-9AB9-4C7A-B201-81024FBDC35E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{DCF52387-DC43-4F09-B132-484F3AC97D9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{8D09EA3D-A99D-4929-9F60-F869A22CB73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda">
+      <UniqueIdentifier>{BE8B0B40-1BBD-4407-80C0-25D3E71116D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{57BCE54B-339C-4EC3-ACE7-8AB238DEBB0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\common">
+      <UniqueIdentifier>{BED3A60B-E230-4C0E-AABA-A7D71AF69663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\c_api">
+      <UniqueIdentifier>{F2FB74B3-084B-4658-96FF-5263664CBED1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\engine">
+      <UniqueIdentifier>{7A10C9DB-4ED6-49B8-897D-3AB7DBB5D151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\io">
+      <UniqueIdentifier>{C5FDB6AA-E8CE-4392-B1D6-12FE6025452D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\kvstore">
+      <UniqueIdentifier>{2EB480C3-B609-4508-8AC1-3B9BF760CED8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ndarray">
+      <UniqueIdentifier>{E7CE2E6A-FA90-4DD4-8545-BFE2F3FBACC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\operator">
+      <UniqueIdentifier>{25568B59-EB0B-487B-85D8-837985FB15DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\optimizer">
+      <UniqueIdentifier>{97CD1618-E707-4651-A4D8-53982F1EC1ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\storage">
+      <UniqueIdentifier>{F122D5EA-C8CA-488B-BA0B-4E4007487078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\symbol">
+      <UniqueIdentifier>{C0037220-625A-429E-B2ED-7F548776D9C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\common">
+      <UniqueIdentifier>{D033F402-6E97-4C5A-AB7B-57BB667E71AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\c_api">
+      <UniqueIdentifier>{28599C7E-99F7-4A54-92A1-94E01F568D42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\engine">
+      <UniqueIdentifier>{3F30B365-D7F4-4E55-A5B5-453DF2524191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\io">
+      <UniqueIdentifier>{D46124AA-196C-4750-A9C3-3A51A1E5A889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\kvstore">
+      <UniqueIdentifier>{6EA18779-C4CF-4250-9711-1E7C913EDF97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\ndarray">
+      <UniqueIdentifier>{3D6ED843-4B0D-4E11-8B0B-5561496B6902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\operator">
+      <UniqueIdentifier>{C5D6C804-23F4-4DE3-8675-E2E2C0BA6A63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\optimizer">
+      <UniqueIdentifier>{CDA450DE-03FD-4B0C-AA47-43170F28F217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\storage">
+      <UniqueIdentifier>{ADB44967-6F68-4CD3-A50B-6ED1818CF2EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\symbol">
+      <UniqueIdentifier>{1116073F-575C-4C46-AC1E-92ABA1A05294}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
