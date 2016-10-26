@@ -154,7 +154,7 @@ def parse_args():
         and output to <prefix>.lst.\
         Otherwise im2rec will read <prefix>.lst and create a database at <prefix>.rec')
     cgroup.add_argument('--exts', type=list, action='append',default=['.jpeg', '.jpg'],
-                        help='list of acceptable image extensions.')
+                        help='list of acceptable image extensions.')#注意此处必须加上action=‘append’，否则参数exts无法正确使用
     cgroup.add_argument('--chunks', type=int, default=1, help='number of chunks.')
     cgroup.add_argument('--train-ratio', type=float, default=1.0,
                         help='Ratio of images to use for training.')
