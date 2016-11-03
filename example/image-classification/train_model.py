@@ -22,7 +22,7 @@ def fit(args, network, data_loader, batch_end_callback=None):
         logger.addHandler(handler)
         logger.setLevel(logging.DEBUG)
         logger.info('start with arguments %s', args)
-    else:
+    else:#在窗口中打印信息，这个也很重要，否则不打印信息，就无法观察训练中间结果
         logging.basicConfig(level=logging.DEBUG, format=head)
         logging.info('start with arguments %s', args)
 
@@ -47,10 +47,11 @@ def fit(args, network, data_loader, batch_end_callback=None):
         save_model_prefix = model_prefix
     checkpoint = None if save_model_prefix is None else mx.callback.do_checkpoint(save_model_prefix)
 
-    # data
+    # data 加载训练和验证数据迭代器
     (train, val) = data_loader(args, kv)
 
-    # train
+    # train 训练网络
+	#devs 选择是cpu还是gpu
     devs = mx.cpu() if args.gpus is None else [
         mx.gpu(int(i)) for i in args.gpus.split(',')]
 
@@ -74,16 +75,16 @@ def fit(args, network, data_loader, batch_end_callback=None):
         kv = None
 
     model = mx.model.FeedForward(
-        ctx                = devs,
-        symbol             = network,
-        num_epoch          = args.num_epochs,
-        learning_rate      = args.lr,
+        ctx                = devs,#使用cpu还是gpu
+        symbol             = network,#网络符号名称，一般是最后的输出层的符号名称
+        num_epoch          = args.num_epochs,#迭代次数
+        learning_rate      = args.lr,#学习率
         momentum           = 0.9,
         wd                 = 0.00001,
-        initializer        = mx.init.Xavier(factor_type="in", magnitude=2.34),
+        initializer        = mx.init.Xavier(factor_type="in", magnitude=2.34),#权重初始化的方式
         **model_args)
 
-    eval_metrics = ['accuracy']
+    eval_metrics = ['accuracy'] #训练精度，Top_k精度等
     ## TopKAccuracy only allows top_k > 1
     for top_k in [5, 10, 20]:
         eval_metrics.append(mx.metric.create('top_k_accuracy', top_k = top_k))
@@ -93,12 +94,12 @@ def fit(args, network, data_loader, batch_end_callback=None):
             batch_end_callback = [batch_end_callback]
     else:
         batch_end_callback = []
-    batch_end_callback.append(mx.callback.Speedometer(args.batch_size, 50))
+    batch_end_callback.append(mx.callback.Speedometer(args.batch_size, 50))#每50次打印一次训练信息，这个很重要
 
     model.fit(
-        X                  = train,
-        eval_data          = val,
-        eval_metric        = eval_metrics,
-        kvstore            = kv,
-        batch_end_callback = batch_end_callback,
-        epoch_end_callback = checkpoint)
+        X                  = train,#训练数据迭代器
+        eval_data          = val,#验证数据迭代器
+        eval_metric        = eval_metrics,#想要输出的评估参数，训练精度，Top_k精度等
+        kvstore            = kv,#单机下使用默认值即可
+        batch_end_callback = batch_end_callback,#打印中间训练信息
+        epoch_end_callback = checkpoint)#训练数据每迭代一次可以把模型参数保存下来
